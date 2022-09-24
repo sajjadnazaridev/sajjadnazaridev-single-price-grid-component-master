@@ -1,0 +1,139 @@
+/* Google Font */
+@import url(https://fonts.googleapis.com/css?family=Karla);
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Karla';
+    background-color: hsl(204, 43%, 93%);
+}
+
+.section1, .section2{
+    width: 80%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.section1{
+    margin: 5% auto 0;
+    padding: 30px;
+    border-radius: 10px 10px 0 0;
+    background-color: #fff;
+}
+
+.section1 .join{
+    margin: 10px auto 40px;
+    color: hsl(179, 62%, 43%);
+}
+
+.section1 .subject{
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: hsl(71, 73%, 54%);
+    font-weight: 600;
+}
+
+.section1 .description{
+    color: hsl(218, 22%, 67%);
+    font-size: 25px;
+}
+
+.section2 .part1, .section2 .part2{
+    display: inline-block;
+    width: 50%;
+    height: 16rem;
+    padding: 30px;
+}
+
+.section2{
+    margin: 0 auto 3%;
+}
+
+.section2 .part1{
+    background-color: hsl(179, 62%, 43%);
+}
+
+.section2 .part2{
+    float: right;
+    background-color: hsl(179, 62%, 50%);
+}
+
+.part1 .subs, .part1 .dollar, .part1 .info, .part1 .btn-sign, .part2 .why{
+    color: #fff;
+}
+
+.part1 .subs, .part2 .why{
+    margin-bottom: 15px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.part1{
+    border-radius: 0 0 0 10px;
+}
+
+.part1 .dollar{
+    margin-right: 10px;
+    font-size: 35px;
+}
+
+.part1 .hidden-dollar{
+    color: rgba(255, 255, 255, 0.623);
+}
+
+.part1 .info{
+    margin: 15px auto 30px;
+}
+
+.part1 .btn-sign{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    font-weight: bold;
+    font-family: 'Karla';
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    background-color: hsl(71, 73%, 54%);
+}
+
+.part2{
+    border-radius: 0 0 10px 0;
+}
+
+.part2 .description{
+    font-size: 21px;
+    color: #ffffffad;
+}
+
+@media screen and (max-width: 700px) {
+    .section2 .part1, .section2 .part2{
+        display: block;
+        width: 100%;
+    }
+
+    .section1 .description{
+        text-align: justify;
+        font-size: 20px;
+    }
+
+    .section2 .part1{
+        height: 17rem;
+        border-radius: 0;
+    }
+
+    .section2 .part2{
+        height: 20rem;
+        float: left;
+    }
+
+    .part1 .subs, .part2 .why{
+        font-weight: normal;
+    }
+
+    .part1 .btn-sign{
+        margin-top: 3px;
+    }
+}
